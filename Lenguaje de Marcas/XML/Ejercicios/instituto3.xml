@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<instituto>
+
+  <nombre>UNIVERSIDAD EUROPEA DE MADRID</nombre>
+  <web>https://www.uem.es</web>
+  <ciclos>
+    <informatica>
+      <nombrec siglas="DAM">
+        Desarrollo de Aplicaciones Multiplataforma
+        <grado>Superior</grado>
+        <cursos>2</cursos>
+        <implantacion>2022</implantacion>
+      </nombrec>
+      <nombrec siglas="ASIR">
+        Administración de Sistemas Informáticos en Red
+        <grado>Superior</grado>
+        <cursos>2</cursos>
+        <implantacion>2022</implantacion>
+      </nombrec>
+    </informatica>
+  </ciclos>
+
+</instituto>

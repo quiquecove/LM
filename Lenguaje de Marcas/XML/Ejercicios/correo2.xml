@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE correo[
+<!ELEMENT correo (remitente)>
+<!ELEMENT remitente (nombre, email)>
+<!ELEMENT destinatario (emaild, nombred)> 
+<!ELEMENT texto (ANY)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT nombred (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT parrafo (#PCDATA)>
+]>
+<correo>
+
+  <remitente>
+    <nombre>Luis</nombre>
+	  <email>luis.f@gmail.com</email>
+  </remitente>
+  <destinatario>
+    <nombred>Andrea </nombred>
+    <emaild>and@hotmail.es</emaild>
+  </destinatario>
+  <asunto>Petición de curriculum</asunto>
+  <texto>
+    Hola de nuevo En relación con tu último mensaje 
+    <parrafo>necesito que me remitas tu curriculum actualizado </parrafo>
+    Nos vemos
+  </texto>
+
+</correo>
