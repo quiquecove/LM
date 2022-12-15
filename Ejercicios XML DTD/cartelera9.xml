@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<cartelera>
+
+  <pelicula>
+    <titulo>Con faldas y a lo loco</titulo>
+    <director>Billy Wilder</director>
+    <genero genero="musiclal"/>
+  </pelicula>
+
+  <pelicula>
+    <titulo>Sopa de ganso</titulo>
+    <director>Leo McCarey</director>
+    <genero genero="comedia"/>
+  </pelicula>
+
+</cartelera>
