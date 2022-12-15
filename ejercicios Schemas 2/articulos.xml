@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Explicación ejercicio -->
+<!-- Programación de schema que usa elementos complejos que solo tienen subetiquetas -->
+<articulos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="articulos.xsd">
+	<articulo>
+      		<nombre>Mesa</nombre>
+      		<precio>50</precio>
+  	</articulo>
+   	<articulo>
+     		 <nombre>Silla</nombre>
+      		<precio>78.99</precio>
+  	 </articulo>
+</articulos>

@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="agenda">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="contactos" />
+    </xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="contactos">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element ref="contacto" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+	</xs:complexType>
+	</xs:element>
+	
+	<xs:element name="contacto">
+	<xs:complexType>
+		<xs:sequence>
+			<xs:element name="nombre" type="TipoCadena" />
+			<xs:element name="apellido" type="TipoCadena" minOccurs="1" maxOccurs="2" />
+			<xs:element name="edad" type="TipoEdad" />
+			<xs:element name="sexo" type="TipoSexo" />
+			<xs:element name="direccion" type="xs:string" />
+			<xs:element name="municipio" type="xs:string" />
+			<xs:element name="cp" type="xs:integer" />
+			<xs:element name="mail" type="xs:string" />
+			<xs:element name="telefono" type="TipoTelefono" />
+    </xs:sequence>
+      <xs:attribute name="cod" type="TipoCodigo" use="required" />
+	</xs:complexType>
+	</xs:element>
+	
+	<!-- Definición de tipos de datos -->
+	
+	  <xs:simpleType name="TipoCadena">
+    <xs:restriction base="xs:string">
+      <xs:maxLength value="100"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+<xs:simpleType name="TipoEdad">
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="100"/>
+    </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="TipoSexo">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="hombre"/>
+      <xs:enumeration value="mujer"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+	<xs:simpleType name="TipoTelefono">
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="9"/>
+    </xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="TipoCodigo">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="[A-Z][A-Z][A-Z][0-9][0-9][0-9]"/>
+    </xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema>

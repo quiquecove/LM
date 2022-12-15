@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Explicación ejercicio -->
+<!-- Programación de schema que usa elementos complejos que tienen subetiquetas y atributos con restriccones (facetas)
+- el atributo código tiene un patrón de 3 letras mayúsculas y 3 números
+- las cadenas de caracteres para nombre y apellidos como máximo pueden tener una longitud de 100 carcateres
+- la edad está comprendida entre 0 y 100 años
+- el sexo sólo puede ser hombre o mujer
+- el número de teléfono es un número de 9 dígitos
+- definir todos los tipos de datos al final del schema 
+- usar referencia para las etiqueta contactos y contacto
+ -->
+<agenda xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="agenda.xsd">
+<contactos>
+	<contacto cod="COD001">
+		<nombre>Jorge</nombre>
+		<apellido>Horcas</apellido>
+		<apellido>Pulido</apellido>
+		<edad>35</edad>
+		<sexo>hombre</sexo>
+		<direccion>Virgen de Lourdes</direccion>
+		<municipio>Madrid</municipio>
+		<cp>28027</cp>
+		<mail>jorge@mail.com</mail>
+		<telefono>665897454</telefono>
+	</contacto>
+</contactos>
+</agenda>

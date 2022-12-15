@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- Explicación ejercicio -->
+<!-- Programación de schema que usa elementos complejos que tienen subetiquetas y atributos -->
+<alumnos xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="alumnos.xsd">
+  <alumno cod="a1">
+    <nombre>Juan</nombre>
+    <edad>30</edad>
+  </alumno>
+  <alumno cod="a2">
+    <nombre>Maria</nombre>
+    <edad>25</edad>
+  </alumno>
+</alumnos>

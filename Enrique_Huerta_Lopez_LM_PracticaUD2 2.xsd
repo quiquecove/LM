@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  
+  <xs:element name="recetas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="receta" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="receta">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="nombre"/>
+        <xs:element ref="ingredientes"/>
+        <xs:element ref="proceso"/>
+      </xs:sequence>
+      
+      <xs:attribute name="cod" type="codigo"/>
+      <xs:attribute name="comensales" type="comensales" use="required"/>
+      <xs:attribute name="dificultad" type="dificultad" use="required"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="ingredientes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="ingrediente" type="ingrediente" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="proceso">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="paso" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  
+  
+<!--Definicion tipos de datos para limitar el codigo -->  
+<xs:simpleType name="codigo">
+ <xs:restriction base="xs:string">
+ <xs:pattern value="[a-z][a-z][0-9][0-9]"/> 
+ </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="comensales">
+ <xs:restriction base="xs:integer">
+ <xs:minInclusive value="1"/>
+ <xs:maxInclusive value="25"/>
+ <xs:totalDigits value="2"/>
+ </xs:restriction>
+</xs:simpleType>
+  
+<xs:simpleType name="dificultad">
+ <xs:restriction base="xs:string">
+  <xs:enumeration value="facil"/>
+  <xs:enumeration value="media"/>
+ <xs:enumeration value="dificil"/>
+ </xs:restriction>
+</xs:simpleType>  
+  
+<xs:simpleType name="ingrediente">
+ <xs:restriction base="xs:string">
+ <xs:maxLength value="150"/>
+ </xs:restriction>
+</xs:simpleType>
+  
+</xs:schema>

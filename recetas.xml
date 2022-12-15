@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Enrique_Huerta_Lopez_LM_PracticaUD2 2.xsd">
+
+
+	<receta cod="re01" comensales="02" dificultad="media">
+	<nombre>sopa de cebolla</nombre>
+		<ingredientes>
+			<ingrediente>cebollas</ingrediente>
+			<ingrediente>caldo de carne</ingrediente>
+			<ingrediente>mantequilla</ingrediente>
+		</ingredientes>
+		<proceso> 
+			<paso>pelar y partir las cebollas en rodajas finas.</paso> 
+			<paso>rehogarlas con la mantequilla, sal y pimienta a fuego lento</paso> 
+			<paso>añadir la harina sin dejar de remover.</paso> 
+		</proceso>
+	</receta>
+	
+	<receta cod="re02" comensales="04" dificultad="facil">
+	<nombre>tortilla de patata</nombre>
+		<ingredientes>
+			<ingrediente>patatas</ingrediente>
+			<ingrediente>huevos</ingrediente>
+			<ingrediente>aceite de oliva</ingrediente>
+			</ingredientes>
+		<proceso> 
+			<paso>pelar y partir las patatas en rodajas finas.</paso> 
+			<paso>rehogarlas con aceite de oliva a fuego lento</paso> 
+			<paso>batir los huevos.</paso> 
+		</proceso>
+	</receta>
+
+</recetas>
