@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE cartelera[
+<!ELEMENT cartelera (pelicula)+>
+<!ELEMENT pelicula (titulo, director, genero)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT director (#PCDATA)>
+<!ELEMENT genero EMPTY>
+<!ATTLIST genero genero CDATA #REQUIRED>
+]>
+<cartelera>
+
+  <pelicula>
+    <titulo>Con faldas y a lo loco</titulo>
+    <director>Billy Wilder</director>
+    <genero genero="musiclal"/>
+  </pelicula>
+
+  <pelicula>
+    <titulo>Sopa de ganso</titulo>
+    <director>Leo McCarey</director>
+    <genero genero="comedia"/>
+  </pelicula>
+
+</cartelera>

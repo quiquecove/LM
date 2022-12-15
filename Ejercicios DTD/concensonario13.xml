@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Concesionario[
+<!ELEMENT Concesionario (modelo)+>
+<!ELEMENT modelo (#PCDATA | motor | potencia | consumo_medio)*>
+<!ELEMENT motor (#PCDATA)>
+<!ELEMENT potencia (#PCDATA)>
+<!ELEMENT consumo_medio (#PCDATA)>
+<!ATTLIST modelo  id ID #REQUIRED mod_rel IDREFS #IMPLIED>
+<!ATTLIST motor motor_rel IDREFS #REQUIRED>
+<!ATTLIST consumo_medio velocidad CDATA " " >
+]>
+
+
+<Concesionario>
+<modelo id="M556">No disponible</modelo>
+<modelo id="M555" mod_rel="M444 M556">Este modelo tiene un motor <motor motor_rel="M556">1.998cc 16v. de cuatro cilindros</motor>, que desarrolla una potencia de <potencia>128 CV.</potencia>Dispone de cambio manual ... el consumo medio de este monovolumen es <consumo_medio velocidad="100km">11</consumo_medio>El precio base es de 2.225.000.</modelo>
+<modelo id="M557">No disponible</modelo>
+<modelo id="M154">No disponible</modelo>
+<modelo id="M444" mod_rel="M555 M154">Este modelo tiene un motor <motor motor_rel="M556">2.000cc 16v. de cuatro cilindros</motor> con <potencia>128 CV.</potencia> Dispone de cambio manual ... el consumo medio de este monovolumen es <consumo_medio velocidad="100km">11</consumo_medio>El precio base es de 2.500.000</modelo>
+</Concesionario>
+

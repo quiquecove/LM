@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE listacomponentes[
+<!ELEMENT listacomponentes (componente+)>
+<!ELEMENT componente (tarjetagrafica | monitor)>
+<!ELEMENT tarjetagrafica (memoria,  preciot)>
+<!ELEMENT monitor (tamaño,  preciom)>
+<!ELEMENT memoria (#PCDATA)>
+<!ELEMENT tamaño (#PCDATA)>
+<!ELEMENT preciot (#PCDATA)>
+<!ELEMENT preciom (#PCDATA)>
+<!ATTLIST preciot moneda  (euros | dolares) #REQUIRED >
+<!ATTLIST preciom moneda (euros | dolares) #REQUIRED>
+]>
+
+<listacomponentes>
+
+  <componente>
+    <tarjetagrafica>
+      <memoria>2GB</memoria>
+      <preciot moneda="euros">190</preciot>
+    </tarjetagrafica>
+  </componente>
+
+  <componente>
+    <monitor>
+      <tamaño>14</tamaño>
+      <preciom moneda="dolares">99.49</preciom>
+    </monitor>
+  </componente>
+
+</listacomponentes> 

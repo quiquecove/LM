@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE articulos[
+<!ELEMENT articulos (articulo+)>
+<!ELEMENT articulo (nombre, precio, descripcion,color)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT descripcion (#PCDATA)>
+<!ELEMENT color (#PCDATA)>
+<!ATTLIST nombre cantidad #FIXED "euros">
+<!ATTLIST precio moneda #FIXED >
+<articulos>
+
+  <articulo>
+    <nombre cantidad="9">pantalon</nombre>
+    <precio moneda="euros">25</precio>
+    <descripcion>tejido de algodon</descripcion>
+    <color>negro</color>
+  </articulo>
+
+  <articulo>
+    <nombre cantidad="12">camiseta </nombre>
+    <precio_euros moneda="euros">12</precio_euros>
+    <descripcion>manga corta</descripcion>
+    <color>blanca</color>
+  </articulo>
+
+  <articulo>
+    <nombre cantidad="10">sudadera</nombre>
+    <precio_euros moneda="euros">23</precio_euros>
+    <descripcion>sport</descripcion>
+    <color>azul</color>
+  </articulo>
+
+</articulos>

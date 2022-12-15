@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE catalogo[
+<!ELEMENT catalogo (cd)+>
+<!ELEMENT cd (titulo, artista, pais, compañia, precio, año)>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT artista (#PCDATA)>
+<!ELEMENT pais (#PCDATA)>
+<!ELEMENT compañia (#PCDATA)>
+<!ELEMENT precio (#PCDATA)>
+<!ELEMENT año (#PCDATA)>
+<!ATTLIST cd codigo NMTOKENS #REQUIRED>
+<!ATTLIST cd cantidad CDATA #IMPLIED>
+<!ATTLIST precio descuento NMTOKEN #REQUIRED>
+]>
+
+<catalogo>
+
+  <cd codigo="a 45" cantidad="28">
+    <titulo>EmpireBurlesque</titulo>
+    <artista>Bob Dylan</artista>
+    <pais>USA</pais>
+    <compañia>Columbia</compañia>
+    <precio descuento="0">10.90</precio>
+    <año>1985</año>
+  </cd>
+
+  <cd codigo="b 53" cantidad="16">
+    <titulo>Hideyourheart</titulo>
+    <artista>Bonnie Tyler</artista>
+    <pais>UK</pais>
+    <compañia>CBS Records</compañia>
+    <precio descuento="10">9.90</precio>
+    <año>1988</año>
+  </cd>
+
+</catalogo>
